@@ -1,4 +1,6 @@
-# TODO : You are asked to square every digit of a number and concatenate them
+# 7kyu
+# TODO : You are asked to square every digit
+# of a number and concatenate them
 
 def square_digits(num)
   num.digits.reverse.map do |digit|

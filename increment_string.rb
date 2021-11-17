@@ -7,6 +7,8 @@
 # If the string does not end with a number,
 # the number 1 should be appended to the new string.
 
+
+# METHODE N°1
 def increment_string(input)
   arr = input.split(/(\d*$)/)
   # => ['foo'], ['foobar', '001'], ['foobar', '1'], etc.
@@ -40,3 +42,17 @@ p increment_string('') # => '1'
 #
 # ('0' * (arr[1].size - num.size) + num)       =>        '002'          '01'
 
+
+
+
+# METHODE N°2
+def string_increment_with_regex(input)
+  input.sub(/\d*$/) { |x| x.empty? ? 1 : x.next }
+end
+
+p string_increment_with_regex('foo') # => 'foo1'
+p string_increment_with_regex('foobar001') # => 'foobar002'
+p string_increment_with_regex('foobar1') # => 'foobar2')
+p string_increment_with_regex('foobar00') # => 'foobar01'
+p string_increment_with_regex('foobar99') # => 'foobar100'
+p string_increment_with_regex('') # => '1'

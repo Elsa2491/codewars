@@ -1,4 +1,5 @@
 # 7kyu
+
 # TODO : Complete the function that accepts a string parameter
 # and reverse each word in the string
 # ALL spaces should be retained

@@ -1,4 +1,5 @@
 # 6kyu
+
 # TODO : Convert a string to a new string
 # in the new string :
 # if that character appears only once in the original string,

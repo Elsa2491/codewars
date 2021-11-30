@@ -10,4 +10,3 @@ def square_digits(num)
 end
 
 p square_digits(3212)  # => 9414
-

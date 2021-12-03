@@ -1,4 +1,4 @@
-require_relative "../acronymize"
+require_relative "../fizz_buzz"
 
 describe '#fizzbuzz' do
   it 'should return "Fizz" when divisible by 3' do

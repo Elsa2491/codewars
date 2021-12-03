@@ -13,18 +13,6 @@ describe '#fizzbuzz' do
     expect(actual).to eq(expected)
   end
 
-  it 'should return num when not divisible by 5' do
-    actual = fizzbuzz(22)
-    expected = 22
-    expect(actual).to eq(expected)
-  end
-
-  it 'should return num when not divisible by 3 and by 5' do
-    actual = fizzbuzz(98)
-    expected = 98
-    expect(actual).to eq(expected)
-  end
-
   it 'should return "FizzBuzz" when divisible by 3 and by 5' do
     actual = fizzbuzz(15)
     expected = 'FizzBuzz'
